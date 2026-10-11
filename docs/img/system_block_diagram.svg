@@ -1,0 +1,94 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1240" height="615" viewBox="0 0 1240 615">
+<defs><marker id="ah" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="7" markerHeight="7" orient="auto-start-reverse"><path d="M0,0 L10,5 L0,10 z" fill="#3D444D"/></marker><marker id="ahs" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="7" markerHeight="7" orient="auto-start-reverse"><path d="M0,0 L10,5 L0,10 z" fill="#3D444D"/></marker></defs>
+<rect width="1240" height="615" fill="#FFFFFF"/>
+<text x="620.0" y="38.0" font-family="Helvetica, Arial, 'Liberation Sans', sans-serif" font-size="20" font-weight="bold" text-anchor="middle" fill="#1F2328">Pulse-Doppler Radar Processor: System Block Diagram</text>
+<text x="620.0" y="62.0" font-family="Helvetica, Arial, 'Liberation Sans', sans-serif" font-size="13" font-weight="normal" text-anchor="middle" fill="#57606A">Digilent Basys3 · Xilinx Artix-7 XC7A35T</text>
+<rect x="150" y="88" width="1070" height="412" rx="10" fill="#FCFCFD" stroke="#8C959F" stroke-width="1.5"/>
+<text x="168.0" y="110.0" font-family="Helvetica, Arial, 'Liberation Sans', sans-serif" font-size="12" font-weight="bold" text-anchor="start" fill="#57606A">FPGA</text>
+<rect x="185" y="135" width="200" height="106" rx="6" fill="#EAF2FB" stroke="#2F6DB5" stroke-width="1.5"/>
+<path d="M185,163 L185,141 Q185,135 191,135 L379,135 Q385,135 385,141 L385,163 Z" fill="#2F6DB5"/>
+<text x="285.0" y="154.0" font-family="Helvetica, Arial, 'Liberation Sans', sans-serif" font-size="14" font-weight="bold" text-anchor="middle" fill="#FFFFFF">Target Emulator</text>
+<text x="285.0" y="182.0" font-family="Helvetica, Arial, 'Liberation Sans', sans-serif" font-size="11.5" font-weight="normal" text-anchor="middle" fill="#1F2328">4 point targets</text>
+<text x="285.0" y="198.5" font-family="Helvetica, Arial, 'Liberation Sans', sans-serif" font-size="11.5" font-weight="normal" text-anchor="middle" fill="#1F2328">range-extended clutter</text>
+<text x="285.0" y="215.0" font-family="Helvetica, Arial, 'Liberation Sans', sans-serif" font-size="11.5" font-weight="normal" text-anchor="middle" fill="#1F2328">receiver noise</text>
+<rect x="455" y="135" width="200" height="106" rx="6" fill="#E8F5F1" stroke="#1F8A70" stroke-width="1.5"/>
+<path d="M455,163 L455,141 Q455,135 461,135 L649,135 Q655,135 655,141 L655,163 Z" fill="#1F8A70"/>
+<text x="555.0" y="154.0" font-family="Helvetica, Arial, 'Liberation Sans', sans-serif" font-size="14" font-weight="bold" text-anchor="middle" fill="#FFFFFF">Range Processing</text>
+<text x="555.0" y="182.0" font-family="Helvetica, Arial, 'Liberation Sans', sans-serif" font-size="11.5" font-weight="normal" text-anchor="middle" fill="#1F2328">LFM matched filter</text>
+<text x="555.0" y="198.5" font-family="Helvetica, Arial, 'Liberation Sans', sans-serif" font-size="11.5" font-weight="normal" text-anchor="middle" fill="#1F2328">Taylor taper (optional)</text>
+<text x="555.0" y="215.0" font-family="Helvetica, Arial, 'Liberation Sans', sans-serif" font-size="11.5" font-weight="normal" text-anchor="middle" fill="#1F2328">two-pulse MTI (optional)</text>
+<rect x="725" y="135" width="200" height="106" rx="6" fill="#F0ECF8" stroke="#6A4FB0" stroke-width="1.5"/>
+<path d="M725,163 L725,141 Q725,135 731,135 L919,135 Q925,135 925,141 L925,163 Z" fill="#6A4FB0"/>
+<text x="825.0" y="154.0" font-family="Helvetica, Arial, 'Liberation Sans', sans-serif" font-size="14" font-weight="bold" text-anchor="middle" fill="#FFFFFF">Doppler Processing</text>
+<text x="825.0" y="182.0" font-family="Helvetica, Arial, 'Liberation Sans', sans-serif" font-size="11.5" font-weight="normal" text-anchor="middle" fill="#1F2328">corner turn (BRAM)</text>
+<text x="825.0" y="198.5" font-family="Helvetica, Arial, 'Liberation Sans', sans-serif" font-size="11.5" font-weight="normal" text-anchor="middle" fill="#1F2328">Blackman window</text>
+<text x="825.0" y="215.0" font-family="Helvetica, Arial, 'Liberation Sans', sans-serif" font-size="11.5" font-weight="normal" text-anchor="middle" fill="#1F2328">64-point FFT</text>
+<rect x="995" y="135" width="200" height="106" rx="6" fill="#FDF1E6" stroke="#C8691C" stroke-width="1.5"/>
+<path d="M995,163 L995,141 Q995,135 1001,135 L1189,135 Q1195,135 1195,141 L1195,163 Z" fill="#C8691C"/>
+<text x="1095.0" y="154.0" font-family="Helvetica, Arial, 'Liberation Sans', sans-serif" font-size="14" font-weight="bold" text-anchor="middle" fill="#FFFFFF">Detection</text>
+<text x="1095.0" y="182.0" font-family="Helvetica, Arial, 'Liberation Sans', sans-serif" font-size="11.5" font-weight="normal" text-anchor="middle" fill="#1F2328">log magnitude</text>
+<text x="1095.0" y="198.5" font-family="Helvetica, Arial, 'Liberation Sans', sans-serif" font-size="11.5" font-weight="normal" text-anchor="middle" fill="#1F2328">CA-CFAR</text>
+<text x="1095.0" y="215.0" font-family="Helvetica, Arial, 'Liberation Sans', sans-serif" font-size="11.5" font-weight="normal" text-anchor="middle" fill="#1F2328">3×3 peak search</text>
+<path d="M385.0,188.0 L455.0,188.0" fill="none" stroke="#3D444D" stroke-width="1.6" marker-end="url(#ah)"/>
+<text x="420.0" y="182.0" font-family="Menlo, Consolas, 'DejaVu Sans Mono', monospace" font-size="11" font-weight="normal" text-anchor="middle" fill="#57606A">12b I/Q</text>
+<text x="420.0" y="204.0" font-family="Menlo, Consolas, 'DejaVu Sans Mono', monospace" font-size="10" font-weight="normal" text-anchor="middle" fill="#57606A">10 MSPS</text>
+<path d="M655.0,188.0 L725.0,188.0" fill="none" stroke="#3D444D" stroke-width="1.6" marker-end="url(#ah)"/>
+<text x="690.0" y="182.0" font-family="Menlo, Consolas, 'DejaVu Sans Mono', monospace" font-size="11" font-weight="normal" text-anchor="middle" fill="#57606A">16b I/Q</text>
+<text x="690.0" y="204.0" font-family="Menlo, Consolas, 'DejaVu Sans Mono', monospace" font-size="10" font-weight="normal" text-anchor="middle" fill="#57606A">10 MSPS</text>
+<path d="M925.0,188.0 L995.0,188.0" fill="none" stroke="#3D444D" stroke-width="1.6" marker-end="url(#ah)"/>
+<text x="960.0" y="182.0" font-family="Menlo, Consolas, 'DejaVu Sans Mono', monospace" font-size="11" font-weight="normal" text-anchor="middle" fill="#57606A">23b I/Q</text>
+<text x="960.0" y="204.0" font-family="Menlo, Consolas, 'DejaVu Sans Mono', monospace" font-size="10" font-weight="normal" text-anchor="middle" fill="#57606A">1 per clock</text>
+<rect x="185" y="360" width="200" height="106" rx="6" fill="#F4F4F4" stroke="#444C56" stroke-width="1.5"/>
+<path d="M185,388 L185,366 Q185,360 191,360 L379,360 Q385,360 385,366 L385,388 Z" fill="#444C56"/>
+<text x="285.0" y="379.0" font-family="Helvetica, Arial, 'Liberation Sans', sans-serif" font-size="14" font-weight="bold" text-anchor="middle" fill="#FFFFFF">Control</text>
+<text x="285.0" y="407.0" font-family="Helvetica, Arial, 'Liberation Sans', sans-serif" font-size="11.5" font-weight="normal" text-anchor="middle" fill="#1F2328">target placement</text>
+<text x="285.0" y="423.5" font-family="Helvetica, Arial, 'Liberation Sans', sans-serif" font-size="11.5" font-weight="normal" text-anchor="middle" fill="#1F2328">processing modes</text>
+<text x="285.0" y="440.0" font-family="Helvetica, Arial, 'Liberation Sans', sans-serif" font-size="11.5" font-weight="normal" text-anchor="middle" fill="#1F2328">CFAR threshold</text>
+<rect x="455" y="360" width="200" height="106" rx="6" fill="#F4F4F4" stroke="#444C56" stroke-width="1.5"/>
+<path d="M455,388 L455,366 Q455,360 461,360 L649,360 Q655,360 655,366 L655,388 Z" fill="#444C56"/>
+<text x="555.0" y="379.0" font-family="Helvetica, Arial, 'Liberation Sans', sans-serif" font-size="14" font-weight="bold" text-anchor="middle" fill="#FFFFFF">UART Telemetry</text>
+<text x="555.0" y="407.0" font-family="Helvetica, Arial, 'Liberation Sans', sans-serif" font-size="11.5" font-weight="normal" text-anchor="middle" fill="#1F2328">detection reports</text>
+<text x="555.0" y="423.5" font-family="Helvetica, Arial, 'Liberation Sans', sans-serif" font-size="11.5" font-weight="normal" text-anchor="middle" fill="#1F2328">map snapshots</text>
+<text x="555.0" y="440.0" font-family="Helvetica, Arial, 'Liberation Sans', sans-serif" font-size="11.5" font-weight="normal" text-anchor="middle" fill="#1F2328">target commands</text>
+<rect x="725" y="360" width="200" height="106" rx="6" fill="#FBEFF3" stroke="#B0406A" stroke-width="1.5"/>
+<path d="M725,388 L725,366 Q725,360 731,360 L919,360 Q925,360 925,366 L925,388 Z" fill="#B0406A"/>
+<text x="825.0" y="379.0" font-family="Helvetica, Arial, 'Liberation Sans', sans-serif" font-size="14" font-weight="bold" text-anchor="middle" fill="#FFFFFF">VGA Display</text>
+<text x="825.0" y="407.0" font-family="Helvetica, Arial, 'Liberation Sans', sans-serif" font-size="11.5" font-weight="normal" text-anchor="middle" fill="#1F2328">range-Doppler map</text>
+<text x="825.0" y="423.5" font-family="Helvetica, Arial, 'Liberation Sans', sans-serif" font-size="11.5" font-weight="normal" text-anchor="middle" fill="#1F2328">detection markers</text>
+<text x="825.0" y="440.0" font-family="Helvetica, Arial, 'Liberation Sans', sans-serif" font-size="11.5" font-weight="normal" text-anchor="middle" fill="#1F2328">status overlay</text>
+<rect x="995" y="360" width="200" height="106" rx="6" fill="#F4F4F4" stroke="#444C56" stroke-width="1.5"/>
+<path d="M995,388 L995,366 Q995,360 1001,360 L1189,360 Q1195,360 1195,366 L1195,388 Z" fill="#444C56"/>
+<text x="1095.0" y="379.0" font-family="Helvetica, Arial, 'Liberation Sans', sans-serif" font-size="14" font-weight="bold" text-anchor="middle" fill="#FFFFFF">Status Display</text>
+<text x="1095.0" y="407.0" font-family="Helvetica, Arial, 'Liberation Sans', sans-serif" font-size="11.5" font-weight="normal" text-anchor="middle" fill="#1F2328">7-seg: range, velocity</text>
+<text x="1095.0" y="423.5" font-family="Helvetica, Arial, 'Liberation Sans', sans-serif" font-size="11.5" font-weight="normal" text-anchor="middle" fill="#1F2328">of strongest target</text>
+<text x="1095.0" y="440.0" font-family="Helvetica, Arial, 'Liberation Sans', sans-serif" font-size="11.5" font-weight="normal" text-anchor="middle" fill="#1F2328">LEDs: counts, modes</text>
+<path d="M1095.0,241.0 L1095.0,305.0" fill="none" stroke="#3D444D" stroke-width="1.6"/>
+<path d="M555.0,305.0 L1095.0,305.0" fill="none" stroke="#3D444D" stroke-width="1.6"/>
+<path d="M555.0,305.0 L555.0,360.0" fill="none" stroke="#3D444D" stroke-width="1.6" marker-end="url(#ah)"/>
+<path d="M825.0,305.0 L825.0,360.0" fill="none" stroke="#3D444D" stroke-width="1.6" marker-end="url(#ah)"/>
+<path d="M1095.0,305.0 L1095.0,360.0" fill="none" stroke="#3D444D" stroke-width="1.6" marker-end="url(#ah)"/>
+<circle cx="1095.0" cy="305" r="3.5" fill="#3D444D"/>
+<circle cx="825.0" cy="305" r="3.5" fill="#3D444D"/>
+<text x="690.0" y="297.0" font-family="Menlo, Consolas, 'DejaVu Sans Mono', monospace" font-size="11" font-weight="normal" text-anchor="middle" fill="#57606A">range-Doppler map + detections</text>
+<path d="M285.0,360.0 L285.0,241.0" fill="none" stroke="#3D444D" stroke-width="1.6" marker-end="url(#ah)"/>
+<text x="293.0" y="294.5" font-family="Menlo, Consolas, 'DejaVu Sans Mono', monospace" font-size="11" font-weight="normal" text-anchor="start" fill="#57606A">target and</text>
+<text x="293.0" y="308.5" font-family="Menlo, Consolas, 'DejaVu Sans Mono', monospace" font-size="11" font-weight="normal" text-anchor="start" fill="#57606A">mode config</text>
+<path d="M455.0,413.0 L385.0,413.0" fill="none" stroke="#3D444D" stroke-width="1.6" marker-end="url(#ah)"/>
+<text x="420.0" y="406.0" font-family="Menlo, Consolas, 'DejaVu Sans Mono', monospace" font-size="11" font-weight="normal" text-anchor="middle" fill="#57606A">commands</text>
+<rect x="18" y="395.0" width="118" height="36" rx="18" fill="#FFFFFF" stroke="#8C959F" stroke-width="1.3"/>
+<text x="77.0" y="418.0" font-family="Helvetica, Arial, 'Liberation Sans', sans-serif" font-size="12.5" font-weight="bold" text-anchor="middle" fill="#1F2328">Switches / buttons</text>
+<path d="M136.0,413.0 L185.0,413.0" fill="none" stroke="#3D444D" stroke-width="1.6" marker-end="url(#ah)"/>
+<rect x="480.0" y="560" width="150" height="36" rx="18" fill="#FFFFFF" stroke="#8C959F" stroke-width="1.3"/>
+<text x="555.0" y="583.0" font-family="Helvetica, Arial, 'Liberation Sans', sans-serif" font-size="12.5" font-weight="bold" text-anchor="middle" fill="#1F2328">MATLAB GUI (PC)</text>
+<path d="M555.0,466.0 L555.0,560.0" fill="none" stroke="#3D444D" stroke-width="1.6" marker-end="url(#ah)" marker-start="url(#ahs)"/>
+<text x="563.0" y="520.3" font-family="Menlo, Consolas, 'DejaVu Sans Mono', monospace" font-size="11" font-weight="normal" text-anchor="start" fill="#57606A">USB-UART</text>
+<text x="563.0" y="534.3" font-family="Menlo, Consolas, 'DejaVu Sans Mono', monospace" font-size="11" font-weight="normal" text-anchor="start" fill="#57606A">921.6 kbaud</text>
+<rect x="750.0" y="560" width="150" height="36" rx="18" fill="#FFFFFF" stroke="#8C959F" stroke-width="1.3"/>
+<text x="825.0" y="583.0" font-family="Helvetica, Arial, 'Liberation Sans', sans-serif" font-size="12.5" font-weight="bold" text-anchor="middle" fill="#1F2328">VGA monitor</text>
+<path d="M825.0,466.0 L825.0,560.0" fill="none" stroke="#3D444D" stroke-width="1.6" marker-end="url(#ah)"/>
+<text x="833.0" y="520.3" font-family="Menlo, Consolas, 'DejaVu Sans Mono', monospace" font-size="11" font-weight="normal" text-anchor="start" fill="#57606A">640×480</text>
+<text x="833.0" y="534.3" font-family="Menlo, Consolas, 'DejaVu Sans Mono', monospace" font-size="11" font-weight="normal" text-anchor="start" fill="#57606A">@ 60 Hz</text>
+<rect x="1020.0" y="560" width="150" height="36" rx="18" fill="#FFFFFF" stroke="#8C959F" stroke-width="1.3"/>
+<text x="1095.0" y="583.0" font-family="Helvetica, Arial, 'Liberation Sans', sans-serif" font-size="12.5" font-weight="bold" text-anchor="middle" fill="#1F2328">7-seg display + LEDs</text>
+<path d="M1095.0,466.0 L1095.0,560.0" fill="none" stroke="#3D444D" stroke-width="1.6" marker-end="url(#ah)"/>
+</svg>
